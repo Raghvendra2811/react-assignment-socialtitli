@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import Teams from './Teams'
-import "./myteam.css"
+import "../styles/myteam.css"
 
 const MyTeams = () => {
 
    
     let originalData = [ [{
-        image: "https://ci-front.netlify.app/assets/img/team/team-1.png",
+        image: "https://cdn.shopify.com/s/files/1/0297/4669/2149/files/MFR-Profile-Image-380px.jpg?v=1636732329",
         name: "Mr. Sameer Kulkarni",
         post: "Chief Operating Officer(COO)",
         para1:
@@ -28,7 +28,7 @@ const MyTeams = () => {
           "He holds a Bachelors Degree in Commerce with a Post Graduation in Export Management from Mumbai University.",
       },
       {
-        image: "https://ci-front.netlify.app/assets/img/team/team-5.png",
+        image: "https://picsum.photos/380/380",
         name: "Mr. Sharookh Colabawalla",
         post: "Chief Financial Officer(CFO)",
         para1:
@@ -50,7 +50,7 @@ const MyTeams = () => {
           "Mahesh is a specialist in setting up businesses and re-engineering operating units as a profit centre by designing unique value propositions for Clients using lean processes, low cost-high impact solutions and innovative technology.",
       },
       {
-        image: "https://ci-front.netlify.app/assets/img/team/team-4.png",
+        image: "https://picsum.photos/380/380",
         name: "Ms. Priya Nair",
         post: "Chief Operating Officer(COO)",
         para1:
@@ -63,7 +63,7 @@ const MyTeams = () => {
     ],
        [
         {
-        image: "https://ci-front.netlify.app/assets/img/team/team-1.png",
+        image: "https://picsum.photos/380/380",
         name: "Mr. Sameer Kulkarni",
         post: "Chief Operating Officer(COO)",
         para1:
@@ -74,7 +74,7 @@ const MyTeams = () => {
           "Preeti holds an MBA in HR from KJ SIMSR, Mumbai and PGD in PR & Mass Communication from XIC, Mumbai.",
       },
       {
-        image: "https://ci-front.netlify.app/assets/img/team/team-2.png",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuNl_AOlQlcoAXr9xReVCxfYUx95d9h5TksGo7hJnbCylkftS6DCCatCDvWsRQYUApKvo&usqp=CAU",
         name: "Mr. Sandesh Chitnis",
         post: "Chief Executive Officer(CEO)",
         para1:
@@ -96,7 +96,7 @@ const MyTeams = () => {
           "Major Areas of Expertise: Financial Planning & Strategy, Managing Profitability, HR Compliance, Promoting Process improvement",
       },
       {
-        image: "https://ci-front.netlify.app/assets/img/team/team-3.png",
+        image: "https://picsum.photos/380/380",
         name: "Mr. Mahesh Krishnamoorthy",
         post: "Managing Director(MD)",
         para1:
@@ -131,7 +131,7 @@ const MyTeams = () => {
           "Preeti holds an MBA in HR from KJ SIMSR, Mumbai and PGD in PR & Mass Communication from XIC, Mumbai.",
       },
       {
-        image: "https://ci-front.netlify.app/assets/img/team/team-2.png",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuNl_AOlQlcoAXr9xReVCxfYUx95d9h5TksGo7hJnbCylkftS6DCCatCDvWsRQYUApKvo&usqp=CAU",
         name: "Mr. kartik Chitnis",
         post: "Chief Executive Officer(CEO)",
         para1:
@@ -142,7 +142,7 @@ const MyTeams = () => {
           "He holds a Bachelors Degree in Commerce with a Post Graduation in Export Management from Mumbai University.",
       },
       {
-        image: "https://ci-front.netlify.app/assets/img/team/team-5.png",
+        image: "https://picsum.photos/380/380",
         name: "Mr. Sharookh Colabawalla",
         post: "Chief Financial Officer(CFO)",
         para1:
@@ -164,7 +164,7 @@ const MyTeams = () => {
           "Mahesh is a specialist in setting up businesses and re-engineering operating units as a profit centre by designing unique value propositions for Clients using lean processes, low cost-high impact solutions and innovative technology.",
       },
       {
-        image: "https://ci-front.netlify.app/assets/img/team/team-4.png",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuNl_AOlQlcoAXr9xReVCxfYUx95d9h5TksGo7hJnbCylkftS6DCCatCDvWsRQYUApKvo&usqp=CAU",
         name: "Ms. Preeti Nair",
         post: "Chief Operating Officer(COO)",
         para1:
@@ -195,7 +195,7 @@ const MyTeams = () => {
             </div>
         </div>
         <div id="teamsSlider">
-            <Teams data={data}/>
+            <Teams data={data} />
         </div>
     </div>
   )

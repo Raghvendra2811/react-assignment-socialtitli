@@ -30,8 +30,34 @@
  }
  #teamsSlider{
    width: 50%;
-   margin: 6% auto auto 35%;
+   margin: auto;
+   margin-top: 6%;
+   position: relative;
  }
+ #teamsSlider>div>div{
+  margin: auto;
+ }
+ .fa-arrow-right{
+   position: absolute;
+   top: 35%;
+   z-index: 100;
+right: 12%;
+ }
+ .fa-arrow-left{
+position: absolute;
+top:35%;
+z-index: 100;
+left: 12%;
+ }
+
+ .fa-arrow-right,.fa-arrow-left{
+  color: rgb(1,174,238);
+  /* background-color: rgb(210, 201, 201); */
+  padding: 5px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+ }
+
  .bottomBorder{
    border-bottom: 2px solid rgb(1,174,238);
    color: rgb(1,174,238) !important;

@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import "./Teams.css";
+import "../styles/Teams.css";
 import { useEffect } from "react";
 
 const Teams = ({data}) => {
@@ -14,6 +14,20 @@ const Teams = ({data}) => {
     setshowModal(!showModal);
   };
 
+
+
+  const moveSlider=(value)=>{
+    // console.log(value)
+    if(ref.current===0&&value===-1){
+      ref.current=5
+    }
+    ref.current=Math.abs(ref.current+value)%5
+    console.log(ref.current)
+    let slider = document.getElementsByName("slider");
+    slider[ref.current].checked = true;
+  }
+
+
   useEffect(() => {
     setTimeout(() => {
       let slider = document.getElementsByName("slider");
@@ -27,14 +41,15 @@ const Teams = ({data}) => {
         slider[ref.current].checked = true;
         ref.current = ref.current + 1;
         // console.log(ref.current);
-      }, 5000);
+      }, 3000);
     }, 2000);
   }, []);
 
   return (
     <div>
+        <i onClick={()=>{moveSlider(-1)}} class="fa-solid fa-arrow-left"></i>
       <div class="container">
-        <input type="radio" name="slider" class="d-none" id="s2" />
+        <input type="radio" name="slider" class="d-none" id="s2" checked />
         <input type="radio" name="slider" class="d-none" id="s3" />
         <input type="radio" name="slider" class="d-none" id="s1" />
         <input type="radio" name="slider" class="d-none" id="s4" />
@@ -107,6 +122,8 @@ const Teams = ({data}) => {
           </label>
         </div>
       </div>
+      <i onClick={()=>{moveSlider(1)}} class="fa-solid fa-arrow-right"></i>
+
       {showModal ? (
         <div id="teamModal">
           <div></div>
@@ -117,7 +134,7 @@ const Teams = ({data}) => {
             <h3>{modalData.para2}</h3>
             <h3>{modalData.para3}</h3>
           </div>
-          <img src={modalData.image} alt="image" />
+          <img src={modalData.image} alt="-userimage" />
           <i
             onClick={() => {
               openModal(ref.current);
