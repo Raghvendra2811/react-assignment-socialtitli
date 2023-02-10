@@ -1,0 +1,196 @@
+input {
+  display: none;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  max-width: 600px;
+  max-height: 600px;
+  display: flex;
+  transform-style: preserve-3d;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cards {
+  position: relative;
+  height: 600px;
+  width: 530px;
+  margin-bottom: 20px;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.cards label {
+  position: absolute;
+  width: 320px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border: 1px solid gray;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.55s ease;
+}
+.infos {
+  padding: 10px;
+}
+.infos > h2:first-child {
+  padding: 10px 0px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: rgb(1, 174, 238);
+}
+.infos > h2:last-child {
+  padding: 10px 0px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: gray;
+}
+.cards .card {
+  position: relative;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid white;
+  /* padding: 30px 35px; */
+}
+.image > img {
+  width: 100%;
+}
+
+.card .image img {
+  border-radius: 5px 5px 0px 0px;
+  object-fit: cover;
+}
+#teamModal {
+  /* display: none; */
+  position: fixed;
+  top: 5%;
+  width: 70%;
+  left: 15%;
+  height: 68vh;
+  margin: auto;
+  z-index: 100;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 25% 55%;
+  justify-content: space-between;
+}
+
+#teamModal > div:first-child {
+  /* width: 20%; */
+  background-color: #0e62aa;
+}
+#detailsModal {
+  width: 88%;
+  height: 90%;
+  overflow: auto;
+  margin: auto;
+  text-align: left;
+}
+#detailsModal h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 5px auto 1.2rem auto;
+}
+#detailsModal h2 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: gray;
+  margin-bottom: 10px;
+}
+#detailsModal h3 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+#teamModal > img {
+  position: absolute;
+  width: 416px;
+  height: 413px;
+  top: 8%;
+  left: 5%;
+}
+#teamModal > i {
+    position: absolute;
+    top: 1.5%;
+    right: 1%;
+    font-size: 1.8rem;
+    color: #0e62aa;
+    cursor: pointer;
+  }
+
+#detailsModal::-webkit-scrollbar {
+  width: 0.5em;
+  /* padding-right: 15px; */
+}
+
+#detailsModal::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 13px;
+}
+
+#detailsModal::-webkit-scrollbar-thumb {
+  background-color: #0e62aa;
+  outline: 1px solid slategrey;
+  border-radius: 13px;
+}
+
+#s1:checked ~ .cards #slide4,
+#s2:checked ~ .cards #slide5,
+#s3:checked ~ .cards #slide1,
+#s4:checked ~ .cards #slide2,
+#s5:checked ~ .cards #slide3 {
+  /* box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 45%); */
+  transform: translate3d(-40%, 0, -220px);
+  --current-color1: #eceaed;
+  --current-color2: #404457;
+}
+
+#s1:checked ~ .cards #slide5,
+#s2:checked ~ .cards #slide1,
+#s3:checked ~ .cards #slide2,
+#s4:checked ~ .cards #slide3,
+#s5:checked ~ .cards #slide4 {
+  /* box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 45%); */
+  transform: translate3d(-20%, 0, -120px);
+  --current-color1: #eceaed;
+  --current-color2: #404457;
+}
+
+#s1:checked ~ .cards #slide1,
+#s2:checked ~ .cards #slide2,
+#s3:checked ~ .cards #slide3,
+#s4:checked ~ .cards #slide4,
+#s5:checked ~ .cards #slide5 {
+  /* box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 50%); */
+  transform: translate3d(0, 0, 0);
+  --current-color1: #fad00c;
+  --current-color2: #eceaed;
+}
+
+#s1:checked ~ .cards #slide2,
+#s2:checked ~ .cards #slide3,
+#s3:checked ~ .cards #slide4,
+#s4:checked ~ .cards #slide5,
+#s5:checked ~ .cards #slide1 {
+  /* box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 45%); */
+  transform: translate3d(20%, 0, -120px);
+  --current-color1: #eceaed;
+  --current-color2: #404457;
+}
+
+#s1:checked ~ .cards #slide3,
+#s2:checked ~ .cards #slide4,
+#s3:checked ~ .cards #slide5,
+#s4:checked ~ .cards #slide1,
+#s5:checked ~ .cards #slide2 {
+  /* box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 45%); */
+  transform: translate3d(40%, 0, -220px);
+  --current-color1: #eceaed;
+  --current-color2: #404457;
+}

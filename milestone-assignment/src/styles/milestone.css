@@ -1,0 +1,59 @@
+.blackText {
+  color: black;
+}
+.blueText {
+  color: rgb(1, 174, 238);
+}
+
+#milestoneYears {
+  display: block;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #000 !important;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+  text-align: left !important;
+}
+
+#hrbox {
+  height: 30px;
+  width: 8px;
+  background-color: rgb(1, 174, 238);
+  margin: 0px 4%;
+}
+#milestoneImage {
+  width: 26.5rem !important;
+  height: 29rem;
+  margin-left: -3rem !important;
+  /* margin-bottom: 7rem !important; */
+  margin-top: 3rem !important;
+}
+#mileStoneHeadingDescDiv {
+  box-shadow: 5px 5px 10px rgb(0 0 0 / 10%);
+  border-radius: 5px;
+  height: fit-content;
+  width: 25rem;
+  padding: 2rem 2rem 2rem 2rem;
+  background-color: #fff;
+  position: relative;
+  z-index: 2;
+}
+#MileStoneHeading {
+  display: inline-block;
+  font-size: 27px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #000 !important;
+  margin: 0;
+  padding-bottom: 3rem;
+  text-align: left;
+}
+
+#MileStoneDescription {
+  color: #797676 !important;
+  font-size: 1.2rem;
+  text-align: left;
+}

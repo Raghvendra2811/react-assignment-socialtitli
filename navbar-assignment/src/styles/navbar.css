@@ -1,0 +1,99 @@
+#topMenu{
+    background-color: rgb(14,98,171);
+}
+#topMenu>div>div{
+    margin: auto 1%;
+    font-size: 1.1em;
+    font-weight: 400;
+}
+#navbarOuterDiv{
+    display: grid;
+    /* border: 2px solid red; */
+    grid-template-columns: 30% 70%;
+    margin: auto;
+}
+#navbarOuterDiv>div{
+    /* margin: auto; */
+    align-items: center;
+    /* border: 1px solid blue; */
+}
+#hamburger{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    background-image: url("https://ci-front.netlify.app/assets/img/pattern-bg.png");
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 3rem !important;
+    /* padding-left: 1rem; */
+    margin-left: 1rem;
+
+}
+#navbarDropDownDiv>div{
+    /* border: 1px solid gray; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    width: 280px;
+}
+.navbarDropDown{
+    transition: .3s linear;  
+    text-align: left;
+    font-size: 1.1em;
+    padding: .3rem;
+    width: fit-content;
+}
+.navbarDropDown:hover{
+    padding-left: 0.8rem;
+    border-left: 5px solid #1B67A8;
+}
+
+
+#hamburger p{
+   text-align: left;
+}
+#hamburger i{
+    margin-right: 10px;
+ }
+#hamburger >div>div{
+    margin: 1% auto;
+ }
+ #hamburger >div>div>div{
+    margin-left: 5%;
+}
+.hamburgerBoldText{
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.hamburgerLightText{
+    font-weight: 400;
+    color: gray !important;
+    font-size: 1.3em;
+    margin-bottom: 5px;
+}
+#bootomMenuOuterDiv p{
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: rgb(68, 68, 68);
+}
+#bootomMenuOuterDiv{
+    padding: 15px auto;
+    
+}
+#bootomMenuOuterDiv i{
+    
+    margin-left: 15px;
+}
+#bootomMenuOuterDiv button{
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 6px 14px;
+    background-color: #1B67A8;
+    color: #ffffff;
+    box-shadow: rgb(0 0 0 / 40%) 0px 2px 4px,
+}
